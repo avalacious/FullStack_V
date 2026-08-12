@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Attendance Progress Circle</title>
+  <style>
+  
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f3f4f6;
+      font-family: system-ui, -apple-system, sans-serif;
+    }
+
+ 
+    .progress-circle {
+      position: relative;
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      background-image: conic-gradient(#3b82f6 0% 87%, #e5e7eb 87% 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    }
+
+    .inner-circle {
+      width: 125px;
+      height: 125px;
+      border-radius: 50%;
+      background: #ffffff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+
+    .percentage {
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: #1f2937;
+      line-height: 1;
+    }
+
+
+    .label {
+      font-size: 0.75rem;
+      color: #6b7280;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-top: 4px;
+    }
+  </style>
+</head>
+<body>
+
+ 
+  <div class="progress-circle">
+    <div class="inner-circle">
+      <span class="percentage">87%</span>
+      <span class="label">Attendance</span>
+    </div>
+  </div>
+
+</body>
+</html>
