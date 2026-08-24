@@ -6,18 +6,63 @@
     <title>Document</title>
 </head>
 <style> 
-@font-face {
-    font-family: "HappySwirly";
-    src: url('./HappySwirly-KVB7I.ttf');
+*{
+    margin: 0;
+    padding: 0;
 }
-p{
-    font-family: "HappySwirly";
+#myId{
+    color: red;
 }
 
+.myClass{
+    color: blue;
+}
+
+input[type="email"]{
+    border: 2px solid pink;
+}
+
+input[type="password"]{
+    border: 2px solid green;
+}
+h2{
+    color: purple;
+}
+
+ul>li.myClass>span {
+    background-color: yellow;
+}
+
+div>p{
+    color: orange;
+}
 </style>
 <body>
-    
+    <div>
+        <h3>heading</h3>
+        <p> para 1 </p>
+        <p> para 2</p>
+    </div>
+    <h2> selectors</h2>
+    <ul>
+        <li class="myClass">
+             Universal
+            <span>123</span>
+        </li>
+        <li id="myId">Id</li>
+        <li class="myClass">
+            Class
+            <span>123</span>
+        </li>
+        <li> Attribute</li>
+        <li> Element namee</li>
+        <li> Combinators </li>
+        <li> Pseudo-class</li>
+        <li> Pseudo-element</li>
+    </ul>
 
-    <p > lorem ipsum dolor sit amet </p>
+    <input type="email" placeholder="Enter your email"/>
+    <br/>
+    <input type="password" placeholder="Enter your password"/>
 </body>
 </html>
