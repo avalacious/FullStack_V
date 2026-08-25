@@ -36,14 +36,31 @@ ul>li.myClass>span {
 div>p{
     color: orange;
 }
+
+h2+p { /* first wale p ka color change hoga*/
+    color: aliceblue;
+}
+section h2{
+    color: yellow;
+}
+
+section>h2 {
+    text-transform: lowercase;
+}
+button:hover {
+    background-color: black;
+    color: white;
+}
+
 </style>
 <body>
-    <div>
-        <h3>heading</h3>
+    <button> CLick me !!</button>
+    <section>
+        <h2>heading</h2>
         <p> para 1 </p>
         <p> para 2</p>
-    </div>
-    <h2> selectors</h2>
+    </section>
+    <h3> selectors</h3>
     <ul>
         <li class="myClass">
              Universal
