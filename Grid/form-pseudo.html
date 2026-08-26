@@ -34,6 +34,28 @@ input:valid {
 input:invalid {
     background-color: red;
 }
+input:in-range {
+    background-color: rgb(190, 189, 215);
+}
+input:out-of-range {
+    background-color: lightpink;
+}
+input:placeholder-shown {
+    box-shadow: 0px 0px 5px 0px black;
+}
+input:read-only {
+    border-width: 0px 0px 5px 0px;
+    box-shadow: transparent;
+    background-color: #f0f0f0;
+    color: #999;
+}
+input:focus {
+   box-shadow: 0px 0px 5px 0px black;
+}
+
+div:has(h2) {
+    background-color: lightblue;
+}
 </style>
 <body>
     <input type="text" placeholder="First Name" required/>
@@ -41,5 +63,16 @@ input:invalid {
     <input type="text" placeholder="Last Name" required/>
     <input type="text" placeholder="Address" disabled/>
     <input type="email" placeholder="Email" required/>
+    <input type="checkbox" required/>
+    <input type="number" placeholder="Age" min="0" max="120"/>
+    <input type="text" value="Mr." readonly/>
+
+    <div>
+        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+    </div>
+
+    <div>
+        <h2> Heading</h2>
+    </div>
 </body>
 </html>

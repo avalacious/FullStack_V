@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .moustache {
+    position: relative;
+    width: 120px;
+    height: 40px;
+}
+
+/* Left side */
+.moustache::before {
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 25px;
+    background: black;
+    border-radius: 100% 0 100% 0;
+    transform: rotate(-20deg);
+    left: 5px;
+    top: 5px;
+}
+
+/* Right side */
+.moustache::after {
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 25px;
+    background: black;
+    border-radius: 0 100% 0 100%;
+    transform: rotate(20deg);
+    right: 5px;
+    top: 5px;
+}
+</style>
+<body>
+    <div class="moustache"></div>
+</body>
+</html>
