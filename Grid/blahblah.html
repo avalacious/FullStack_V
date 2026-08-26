@@ -47,14 +47,35 @@ section h2{
 section>h2 {
     text-transform: lowercase;
 }
-button:hover {
+button:hover{
     background-color: black;
     color: white;
 }
+a:link {
+    text-decoration: none;
+    color: black;
+}
+
+a:visited{
+    color: green;
+}
+
+li:nth-child(odd){
+    background-color: aquamarine;
+}
+li:nth-child(even){
+    background-color: violet;
+}
+li:nth-child(-n+2){
+    color: brown;
+}
+
 
 </style>
 <body>
     <button> CLick me !!</button>
+    <a href="xyz.com">Link !</a>
+
     <section>
         <h2>heading</h2>
         <p> para 1 </p>
