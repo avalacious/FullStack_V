@@ -10,25 +10,39 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  height: 300px;
 }
 
 .login-card {
-  background: #ffffff;
+  background: lightgrey;
   padding: 30px;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  width: 100%;
-  max-width: 400px; /* Prevents the card from stretching too wide */
+  height: 100%;
+  width: 300px; /* Prevents the card from stretching too wide */
+  position: center;
 }
+.btn {
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
 </style>
 <body>
     <div class="login-container">
     <div class="login-card">
     <h2>Login</h2>
+    <h4> Enter your name:</h4>
     <input type="text" placeholder="Enter Username">
+    <h4> Enter your password:</h4>
     <input type="password" placeholder="Enter Password">
-    <button>Submit</button>
+    </br>
+    </br>
+    <button class="btn">Submit</button>
   </div>
 </div>
 </body>
