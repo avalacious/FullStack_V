@@ -4,8 +4,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive Navbar</title>
-    <link rel="stylesheet" href="navbar.css">
+
 </head>
+<style>
+    body {
+        margin: 10px;
+        font-family: Arial, sans-serif;
+        padding: 10px 0; /* Add padding to prevent content from being hidden behind the navbar */
+        background-color: #f4f6f9;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #333;
+        padding: 10px 20px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        border-radius: 10px; 
+        background-color: purple;
+
+
+    }
+
+    .logo a {
+        color: white;
+        text-decoration: none;
+        font-size: 24px;
+        font-weight: bold;
+
+    }
+
+    .nav-links {
+        list-style-type: none;
+        display: flex;
+        margin: 0;
+        padding: 0;
+    }
+
+    .nav-links li {
+        margin-left: 20px;
+    }
+
+    .nav-links a {
+        color: white;
+        text-decoration: none;
+        font-size: 16px;
+    }
+
+    .nav-links a.active {
+        border-bottom: 2px solid #007BFF; /* Active link indicator */
+    }
+</style>
 <body>
 
     <nav class="navbar">
