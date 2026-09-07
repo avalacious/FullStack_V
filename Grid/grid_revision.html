@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container {
+        height: 90vh;
+        display: grid;
+       /* grid-template-columns: 1fr 1fr; /* ! fraction, we can also write as 300px 300px it would divide into 2 part */
+        /* grid-template-columns: repeat(300px, 1fr);
+        or 
+        grid-template-columns: repeat(3, minmax(150px, 1fr)) */
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        grid-template-areas:
+        'box1 box1 box2'
+        'box3 box4 box2'
+        'box3 box5 box5';
+        gap: 15px;
+        
+    }
+
+    .container>div{
+        outline: 1px solid black;
+    }
+
+    .container>div:nth-child(1){
+        background-color: red;
+    }
+    .container>div:nth-child(2){
+        background-color: blue;
+    }
+    .container>div:nth-child(3){
+        background-color: green;
+    }
+    .container>div:nth-child(4){
+        background-color: yellow;
+    }
+    .container>div:nth-child(5){
+        background-color: purple;
+    } /* do fit-content property bhi hoti hai jisme hum content ke hisab se size set kar sakte hai */
+</style>
+<body>
+    <div class="container">
+        <div style="grid-area: box1;">1</div>
+        <div style="grid-area: box2;">2</div>
+        <div style="grid-area: box3;">3</div>  
+        <div style="grid-area: box4;">4</div>
+        <div style="grid-area: box5;">5</div>
+    </div>
+</body>
+</html>
