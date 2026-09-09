@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind CSS</title>
+    <link rel="stylesheet" href="./output.css">
+
+    <style>
+
+    </style>
+</head>
+<body>
+    <h1 class="text-4xl text-blue-500 font-bold underline">This is a heading</h1>
+
+    <p class="bg-blue-900">this is a paragraph</p>
+    <p class="border border-red-500 m-8 p-4">this is second para</p>
+    <div class="bg-[#123456] p-4 text-white">cutom color</div>
+    <div class="bg-blue-100 pt-4 text-blue-500">This is another div</div>
+    <div class="4xl font-thin m-4 text-center bg-red-400">This is text inside div element</div>
+    <div class="w-full bg-pink-400 text-center text-white">div element with full width</div>
+    <div class="w-1/2 bg-amber-800 text-center">div element with half width</div>
+    <div class="w-100 h-100 bg-red-600 text-center mx-auto">div element with some height and width</div>
+    <div class="uppercase leading-16 m-4 border bg-yellow-300 italic text-shadow-white text-center pr-8">Div element with all upper case letters</div>
+    <div class="inline bg-orange-500 w-450">this is a div element</div>
+    <div class="inline-block border-b border-red-900 text-4xl w-full mx-auto">Heading1</div>
+    <!-- <div class="relative top-4 left-4">this is a position property <div class="absolute top-4">This is a position with absolute property</div> -->
+    <!--Flexbox-->
+    <div class="flex justify-center items-center gap-2">
+        <div class="bg-red-200 p-5 flex-1 text-center">one</div>
+        <div class="bg-blue-300 p-5 flex-1 text-center">Two</div>
+        <div class="bg-pink-400 p-5 flex-1 text-center">Three</div>
+    </div>
+
+    <nav class="flex justify-between px-4 py-3 bg-gray-950 text-white">
+        <h1 class="text-xl bold-medium">My Heading</h1>
+        <div class="flex gap-6">
+            <a href="#">Home</a>
+            <a href="#">absolute</a>
+            <a href="#">Contact</a>
+        </div>
+    </nav>
+    <!--Responsive design-->
+    <div class="bg-blue-600 md:bg-red-800 lg:bg-purple-500">This is a responsive design</div>
+    <!--grid-->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  gap-2 mt-2">
+        <div class="p-4 bg-blue-400 border">One</div>
+        <div class="p-4 bg-blue-400 border">Two</div>
+        <div class="p-4 bg-blue-400 border">Three</div>
+        <div class="p-4 bg-blue-400 border">Four</div>
+        <div class="p-4 bg-blue-400 border">Five</div>
+        <div class="p-4 bg-blue-400 border">Six</div>
+    </div>
+    <button class="bg-brand text-white px-3 py-2 block mx-auto mt-3">Submit</button>
+</body>
+</html>
