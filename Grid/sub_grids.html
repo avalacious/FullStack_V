@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    :root{
+        --primary-color: lightblue;
+        --secondary-color: lightpink;
+        --text-size:30px;
+        --multiplier: 2;
+    }
+    .container{
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        outline:1px solid black;
+        height: 500px;
+        width: 500px;
+    }
+    .parent{
+        display:grid;
+        font-size:30px;
+        grid-template-columns: subgrid;
+        grid-template-rows: subgrid;
+     
+        grid-column:1/3;
+        grid-row:1/3;
+        background-color: var(--primary-color);
+    }
+    .child{
+        background-color:var(--secondary-color);
+        grid-column:1/2;
+        grid-row:1/2;
+
+    }
+    p{
+        background-color: var(--primary-color);
+        color: var(--secondary-color);
+        font-size: calc(var(--text-size) * var(--multiplier));
+    }
+    div {
+        --primary-color: lightgreen;
+        --secondary-color: lightcoral;
+    }
+</style>
+<body>
+    <p> Hello World</p>
+    <div class="container">
+        <div class="parent">
+            <div class="child">
+                1
+            </div>
+        </div>
+    </div>
+</body>
+</html>
