@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+@layer special, base;  /* base layer is declared first so it will be overridden by special layer */
+
+@layer base{
+ p {
+    font-size: 30px;
+    color: red;
+ }
+ button{
+    font-size: 30px;
+    border-radius: 50%;
+    width:150px;
+    height:150px;
+ }
+}
+
+@layer special {
+
+ p{
+    color:aliceblue  /* blue overrides red because it is declared later in the code */
+ }
+}
+</style>
+<body>
+    <p> Specificity </p> 
+    <button>Click Me</button>
+</body>
+</html>
