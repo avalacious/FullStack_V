@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BEM Mythology</title>
+    <style>
+        .card{
+            /* outline:1px solid black; */
+            width:200px;
+            padding: 3%;
+            box-shadow: 3px 3px 5px grey;
+            margin: auto;
+        }
+        .card__text{
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 900;
+        }
+        .card__button__submit{
+            background-color: black;
+            color: whitesmoke;
+            box-shadow: 3px 3px 5px grey;
+            width: 100px;
+            height: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <img src="https://picsum.photos/seed/picsum/200/300" class="card__img">
+        <p class="card__text">Lorem, ipsum dolor.</p>
+        <button class="card__button__submit">Submit</button>
+    </div>
+</body>
+</html>
