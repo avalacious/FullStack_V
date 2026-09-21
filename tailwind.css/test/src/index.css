@@ -1,1 +1,9 @@
 @import "tailwindcss";
+@theme {
+    --color-coffee:red;
+    roasted: "fff",
+    normal: '#ababab'
+}
+.heading{
+    @apply text-3xl font-bold text-gray-800 mb-4 bg-blue-500 md:bg-amber-600;
+}
