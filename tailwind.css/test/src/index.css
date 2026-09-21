@@ -5,5 +5,5 @@
     normal: '#ababab'
 }
 .heading{
-    @apply text-3xl font-bold text-gray-800 mb-4 bg-blue-500 md:bg-amber-600;
+    @apply text-3xl font-bold text-gray-800 mb-4 bg-blue-500 md:bg-black-600;
 }
