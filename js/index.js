@@ -83,3 +83,18 @@ function isArmstrong(num) {
 }
 console.log(isArmstrong(153)); 
 console.log(isArmstrong(123));
+
+
+function checkAndShow(){
+    let val= document.getElementById("num").value;
+    let para=document.createElement("p");
+    if(isArmstrong(val)){
+       // document.getElementById("result").innerHTML= "The number is an Armstrong number.";//
+       para.textContent= "The number is an Armstrong number.";
+    } else {
+      //  document.getElementById("result").innerHTML= "The number is not an Armstrong number.";//
+      para.textContent= "The number is not an Armstrong number.";
+    }
+    document.getElementsByTagName("body")[0].appendChild(para);
+}
+
