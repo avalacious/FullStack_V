@@ -70,3 +70,16 @@ console.log(arr1);
 /* splice will remove the elements from the array starting from the index mentioned in the first parameter and the number of elements to be removed is mentioned in the second parameter. */
 arr1.entries();
 
+// WAP to check if a number is armstrong or not //
+function isArmstrong(num) {
+    let originalNum = num;
+    let sum = 0;
+    while (num > 0) {
+        let digit = num % 10;
+        sum += Math.pow(digit, 3);
+        num = Math.floor(num / 10);
+    }
+    return sum === originalNum;
+}
+console.log(isArmstrong(153)); 
+console.log(isArmstrong(123));
