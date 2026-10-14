@@ -51,3 +51,22 @@ function showName(){
     console.log(myObj.name);
 }
 
+const arr= [1,2,3,4,5];
+arr.push(6);
+console.log(arr);
+arr.pop();
+console.log(arr);
+
+/* the reference would change thats the reason we can push and pop in the array but we cannot reassign the array to a new value. */
+let arr1=[1, "GLA", 2.5, null, undefined, true, false];
+console.log(arr1);
+
+arr1.unshift(45);
+arr1.shift(43);
+console.log(arr1);
+/* we can use unshift and push to make it behave like a queue. unshift will add the element at the start of the array and shift will remove the first element of the array. */
+arr1.splice(1,3);
+console.log(arr1);
+/* splice will remove the elements from the array starting from the index mentioned in the first parameter and the number of elements to be removed is mentioned in the second parameter. */
+arr1.entries();
+
