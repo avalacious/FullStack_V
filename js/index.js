@@ -98,3 +98,10 @@ function checkAndShow(){
     document.getElementsByTagName("body")[0].appendChild(para);
 }
 
+/*SetInterval is a function that will run the code inside it after every specified time interval. The first parameter is the function to be executed and the second parameter is the time interval in milliseconds. In this case, the code inside the setInterval function will run after every 1000 milliseconds or 1 second. The counter variable is incremented by 1 after every second and the value of counter is printed in the console. */
+var counter=0
+setInterval(()=>{
+    counter +=1;
+    console.log(counter+ " seconds have passed");
+}
+, 1000);
