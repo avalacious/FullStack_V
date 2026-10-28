@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Reaction Timer</title>
+    <style>
+        body {
+            font-family: Arial;
+            text-align: center;
+            background-color: #f2f2f2;
+        }
+
+        h1 {
+            color: darkblue;
+        }
+
+        #box {
+            width: 80%;
+            height: 300px;
+            margin: 30px auto;
+            background-color: #dddddd;
+            border: 2px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+            cursor: pointer;
+        }
+
+        .green {
+            background-color: lightgreen !important;
+        }
+
+        button {
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Reaction Timer Game</h1>
+    <p>Click the box when it turns green!</p>
+    <button id="startBtn">Start Game</button>
+    <div id="box">
+        Click Start Game
+    </div>
+    <p id="result"></p>
+    <p>Best Time: <span id="best">Not set</span></p>
+    <script src="script.js"></script>
+</body>
+</html>
