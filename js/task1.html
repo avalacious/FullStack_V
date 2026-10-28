@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JS Quiz Arena</title>
+</head>
+<body>
+    <div class="quiz-box">
+        <h1>JS Quiz Arena</h1>
+        <div id="quiz-screen">
+            <p id="progress">Q1/5</p>
+            <div class="progress-bg">
+                <div id="progress-line"></div>
+            </div>
+            <p id="score">Score: 0</p>
+            <p id="timer">Time: 30 seconds</p>
+            <h3 id="question"></h3>
+            <div id="options"></div>
+            <p id="explanation"></p>
+            <button id="next-btn" onclick="nextQuestion()">
+                Next
+            </button>
+        </div>
+        <div id="result-screen" class="hide">
+            <h2>Quiz Completed!</h2>
+            <h3 id="final-score"></h3>
+            <p id="rating"></p>
+            <button onclick="reviewAnswers()">
+                Review Wrong Answers
+            </button>
+            <button onclick="restartQuiz()">
+                Restart
+            </button>
+        </div>
+        <div id="review-screen" class="hide">
+            <h2>Wrong Answers</h2>
+            <div id="wrong-list"></div>
+            <button onclick="restartQuiz()">Restart Quiz</button>
+        </div>
+    </div>
+    <script src="task1.js"></script>
+</body>
+</html>
