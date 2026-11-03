@@ -106,3 +106,9 @@ setInterval(()=>{
 }
 , 1000);
 
+// Template liTERALS//
+ 
+ 
+let op=- "Good";
+let avani= 'GLA University is ${op} University';
+console.log(avani);
