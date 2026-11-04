@@ -131,3 +131,16 @@ function outer() {
     inner();
 }
 outer();
+let count=0;
+function increament() {
+    count++;
+    console.log(count);
+}
+function decreament() {
+    count--;
+    console.log(count);
+}   
+
+increament();
+increament();
+decreament();
