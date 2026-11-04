@@ -112,3 +112,22 @@ setInterval(()=>{
 let op=- "Good";
 let avani= 'GLA University is ${op} University';
 console.log(avani);
+
+let mycode= "<h3>Heading</h3><p>Description</p>";
+document.getElementById("mycode").innerHTML=mycode;
+
+let img="https://picsum.photos/200";
+let title="Random Image";
+let desc="Description";
+
+let mycodes='<img src="${img}" alt="${title}"><h3>${title}</h3><p>${desc}</p>';
+document.getElementById("mycode").innerHTML=mycodes;
+
+function outer() {
+    let ash=5;
+    function inner(){
+        console.log(ash);
+    }
+    inner();
+}
+outer();
